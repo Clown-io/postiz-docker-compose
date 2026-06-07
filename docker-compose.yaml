@@ -5,16 +5,16 @@ services:
     restart: always
     environment:
       # === Required Settings
-      MAIN_URL: 'https://kiri2.clownio.com'
-      FRONTEND_URL: 'https://kiri2.clownio.com'
-      NEXT_PUBLIC_BACKEND_URL: 'https://kiri2.clownio.com/api'
+      MAIN_URL: 'https://postiz.clownio.com'
+      FRONTEND_URL: 'https://postiz.clownio.com'
+      NEXT_PUBLIC_BACKEND_URL: 'https://postiz.clownio.com/api'
       JWT_SECRET: 'random string that is unique to every install - just type random characters here!'
       DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local'
       REDIS_URL: 'redis://postiz-redis:6379'
       BACKEND_INTERNAL_URL: 'http://localhost:3000'
       TEMPORAL_ADDRESS: "temporal:7233"
       IS_GENERAL: 'true'
-      DISABLE_REGISTRATION: 'false'
+      DISABLE_REGISTRATION: 'true'
       RUN_CRON: 'true'
 
       # === Storage Settings
