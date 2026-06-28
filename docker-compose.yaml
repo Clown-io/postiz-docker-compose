@@ -16,8 +16,6 @@ services:
       IS_GENERAL: 'true'
       DISABLE_REGISTRATION: 'true'
       RUN_CRON: 'true'
-      YOUTUBE_CLIENT_ID: '396132019411-sedu3c2qmsfutnp0i4543rtm9ad6aajg.apps.googleusercontent.com'
-      YOUTUBE_CLIENT_SECRET: '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'
 
       # === Storage Settings
       STORAGE_PROVIDER: 'local'
@@ -48,8 +46,8 @@ services:
       THREADS_APP_SECRET: ''
       FACEBOOK_APP_ID: ''
       FACEBOOK_APP_SECRET: ''
-      YOUTUBE_CLIENT_ID: ''
-      YOUTUBE_CLIENT_SECRET: ''
+      YOUTUBE_CLIENT_ID: ${YOUTUBE_CLIENT_ID}
+      YOUTUBE_CLIENT_SECRET:  ${YOUTUBE_CLIENT_SECRET}
       TIKTOK_CLIENT_ID: ${TIKTOK_CLIENT_ID}
       TIKTOK_CLIENT_SECRET: ${TIKTOK_CLIENT_SECRET}
       PINTEREST_CLIENT_ID: ''
